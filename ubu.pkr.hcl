@@ -8,11 +8,11 @@ packer {
 }
 
 source "amazon-ebs" "example" {
-  region = "ap-south-1"
-  source_ami = "ami-05e00961530ae1b55" 
+  region = "Enter Your Region"
+  source_ami = "ami-1234567890" 
   instance_type = "t2.micro"
   ssh_username = "ubuntu"
-  ami_name = "my_ubu"
+  ami_name = "Enter your image name"
   tags = {
     Name = "MyEC2Instance" 
   }
