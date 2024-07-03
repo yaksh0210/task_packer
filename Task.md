@@ -163,15 +163,6 @@ build {
       "install_one.sh" //mention a script which you have created for run
     ]
   }
-  
-  post-processors {
-    "amazon-ebs-tag" {
-      ami_id = "${source.amazon-ebs.example.ami_id}"
-      tags = {
-        Name = "MyAMI"  // Tags for the AMI image
-      }
-    }
-  }
 }
 ```
 
@@ -180,3 +171,16 @@ build {
 > packer init .
 
 > packer build "your pkr.hcl file" 
+
+
+### Output will look like :
+------------------------------------------------------------------------------------------
+Created AMI Image using Packer
+
+<img src="op1.png">
+
+------------------------------------------------------------------------------------------
+
+Installation verification done through packer in ami 
+
+<img src="op2.png">
