@@ -8,11 +8,11 @@
   }
 
   source "amazon-ebs" "example" {
-    region = "Enter your preferable region"
-    source_ami = "ami-1234567890" 
+    region = "ap-south-1"
+    source_ami = "ami-0c2af51e265bd5e0e" 
     instance_type = "t2.micro"
-    ssh_username = "name of user of ec2 while doing ssh"
-    ami_name = "your image name"
+    ssh_username = "ubuntu"
+    ami_name = "my_ubu"
     tags = {
       Name = "MyEC2Instance" 
     }
