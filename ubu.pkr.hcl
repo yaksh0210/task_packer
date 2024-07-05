@@ -8,13 +8,13 @@
   }
 
   source "amazon-ebs" "example" {
-    region = "ap-south-1"
-    source_ami = "ami-0c2af51e265bd5e0e" 
+    region = "enter your preferable region"
+    source_ami = "ami-123456789" //enter your source image which you want to use
     instance_type = "t2.micro"
     ssh_username = "ubuntu"
-    ami_name = "my_ubu"
+    ami_name = "enter  image name which you want"
     tags = {
-      Name = "MyEC2Instance" 
+      Name = "enter your tag name" 
     }
     ssh_pty = true 
     ssh_timeout = "10m"
